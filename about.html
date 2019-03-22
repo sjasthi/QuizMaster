@@ -2,117 +2,129 @@
 <html lang="en">
 
 <head>
-   <title> JavaScript Quiz (About) </title>
+    <title> JavaScript Quiz (About) </title>
 </head>
 
-    <script>
+<script>
     //****************************************************
     //  This block helps to catch the syntax errors.
     //  These errors are reported back to the web page
     //****************************************************
-      window.onerror = function(e) {
+    window.onerror = function (e) {
         document.write('There\'s an error: ', e, '</br>')
-     };
-   </script>
+    };
+</script>
 
-    <style>
-        .image {
-            width: 200px;
-            height: 200px;
-            padding: 20px 20px 20px 20px;
-        }
-        .table_2 {
-            margin-left: auto;
-            margin-right: auto;
-        }
-        #welcome {
-            text-align: center;
-        }
-        #table_1 {
-            border-spacing: 100px 0px;
-        }
-        #directions {
-            text-align: center;
-            padding: 20px 40px 0px 40px;
-        }
-        .description {
-            padding: 10px 40px 0px 0px;
-        }
-        #silc {
-            width: 300;
-            height: 85;
-        }
-    </style>
+<style>
+    .image {
+        width: 200px;
+        height: 200px;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .table_2 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #welcome {
+        text-align: center;
+        color: darkorange;
+    }
+
+    #table_1 {
+        border-spacing: 100px 0px;
+    }
+
+    .directions {
+        text-align: center;
+        padding: 20px 40px 0px 40px;
+        color: darkgreen;
+    }
+
+    .description {
+        padding: 0px 40px 0px 0px;
+        color: darkgoldenrod;
+    }
+
+    #silc {
+        width: 300;
+        height: 85;
+    }
+
+    .Name {
+        color: darkgreen;
+    }
+</style>
+
 <body>
     <!--this is the tool bar-->
 
-    <table id = "table_1">
+    <table id="table_1">
         <tr>
-            <td><image id = "silc" src="Images/index_images/silc_home.jpg"></image></td>
+            <td>
+                <image id="silc" src="Images/index_images/silc_home.jpg"></image>
+            </td>
             <!--Link To Preferences-->
-            <td id = "text"><a href = "">Preferences</a></td>
+            <td id="text"><a href="">Preferences</a></td>
             <!--Link To About-->
-            <td id = "text"><a href = "">About</a></td>
+            <td id="text"><a href="">About</a></td>
             <!--Link To Help-->
-            <td id = "text"><a href = "">Help</a></td>
+            <td id="text"><a href="">Help</a></td>
         </tr>
-     </table>
-     <h1 id = "welcome">About Us</h1>
-     <h2 id = "directions">This quizmaster project was created in the 2018-2019 school year by SILC's Social Studies 4 (JavaScript) class. The students in our class range from age 13 to 30. Because of this, we assigned each individual a topic to create 20 questions for and after everyone was done we accumulated all of the questions to create a question bank of 300 questions. Next, we colated all of our code to publish our website. </h2>
+    </table>
+    <h1 id="welcome">About Us</h1>
+    <h3 class="directions">This quizmaster project was created in the 2018-2019 school year by SILC's Social Studies 4
+        (JavaScript) class. The students in our class range from age 13 to 30. Because of this, we assigned each
+        individual a topic to create 20 questions for and after everyone was done we accumulated all of the questions
+        to create a question bank of 300 questions. Next, we colated all of our code to publish our website.</h3>
+    <h3 class="directions">Click on each image to learn more about us.</h3>
 </body>
 
 <script>
 
-//Everyonce can fill in their own information:
-//Href is for more specific bio if they want to incorportate one.
+    //Everyonce can fill in their own information:
+    //Href is for more specific bio if they want to incorportate one.
 
-function Student( href, title, image_src, description)
-{
-  this.href = href;
-  this.title = title;
-  this.image_src = image_src;
-  this.description = description;
+    function Student(href, name, image_src, description) {
+        this.href = href;
+        this.name = name;
+        this.image_src = image_src;
+        this.description = description;
 
-  this.toString = function ()
-  {
-    document.write("<table class = 'table_2'>");
-    document.write("<tr>");
-    document.write("<td><a href ='" + this.href + "' title = '" + this.title + "'><image class = 'image' src='" + this.image_src + "'></image></a></td>");
-    document.write("<td class = 'description'>" + this.description + "</td>");
-    document.write("</tr></table>");
-  }
-}
+        this.toString = function () {
+            document.write("<table class = 'table_2'>");
+            document.write("<tr>");
+            document.write("<td><a href ='" + this.href + "' title = '" + this.name + "'><image class = 'image' src='" + this.image_src + "'></image></a></td>");
+            document.write("<td><h2 class = 'Name'>" + this.name + "</h2><h4 class = 'description'>" + this.description + "</h4></td>");
+            document.write("</tr></table>");
+        }
+    }
 
-var s1 = new Student(
-    "",
-    "Smriti Samtani",
-    "",
-    "Smriti Samtani attends Mahtomedi High School. Although she is a freshman, she is a part of many clubs and activities such as Robotics, Students Against Destructive Decisions, (SADD), Track and Field, and Math Team. In her spare time, Smriti draws and paints. When she is not doing that, Smriti can be found with her nose in a book. She loves to travel and hopes to go on a huge road trip across the United States once she can drive. This is Smriti’s first year at School of Indian language and Culture, (SILC) and she loves it. She is learning Hindi, Computer Programming and Traditional Dance. Smriti volunteers at Lighthouse, an old age home for those who have Dementia or Alzheimers. Smriti’s favorite dessert is Ras Malai and she will do anything to eat some."
-);
+    var s1 = new Student(
+        "persona/aboutSmriti.html",
+        "Smriti Samtani",
+        "Images/about_images/Smriti.jpg",
+        "Smriti Samtani attends Mahtomedi High School. She is a freshman and is a part of many clubs and activities such as Robotics, Students Against Destructive Decisions, (SADD), Track and Field, and Math Team."
+    );
 
-var s2 = new Student(
-    "",
-    "Ishana Didwania",
-    "",
-    "Ishana Didwania is a seventh grader at Mahtomedi Middle School, where her favorite subjects are math and science. She represents her school in Mathcounts competitions, the gymnastics team, and student council. Ishana loves music, and is an active member of the Upper Midwest Flutes Association (UMFA), through which she takes private flute lessons. She is also in her school jazz band. She attends the School of India for Languages and Culture (SILC), where she teaches hindi along with learning computer science and traditional Indian dance. In her spare time, she enjoys writing stories, coding, and most of all, spending time with her family and friends."
-);
+    var s2 = new Student(
+        "",
+        "Ishana Didwania",
+        "",
+        "Ishana Didwania is a seventh grader at Mahtomedi Middle School, where her favorite subjects are math and science. She represents her school in Mathcounts competitions, the gymnastics team, and student council. Ishana loves music, and is an active member of the Upper Midwest Flutes Association (UMFA), through which she takes private flute lessons. She is also in her school jazz band. She attends the School of India for Languages and Culture (SILC), where she teaches hindi along with learning computer science and traditional Indian dance. In her spare time, she enjoys writing stories, coding, and most of all, spending time with her family and friends."
+    );
 
-var s3 = new Student(
-    "",
-    "Bharat Thyagarajan",
-    "",
-    "Bharat Thyagarajan is a physician at the University of Minnesota in the Department of Laboratory Medicine and Pathology. He has been attending SILC along with his daughter for the last 4 years. He enjoys traveling, hiking, running and trying out new activities such as learning HTML and JavaScript. He participates in the SILC Dads Cooking events and enjoys the company of people in the SILC community."
-);
+    var s3 = new Student(
+        "",
+        "Bharat Thyagarajan",
+        "",
+        "Bharat Thyagarajan is a physician at the University of Minnesota in the Department of Laboratory Medicine and Pathology. He has been attending SILC along with his daughter for the last 4 years. He enjoys traveling, hiking, running and trying out new activities such as learning HTML and JavaScript. He participates in the SILC Dads Cooking events and enjoys the company of people in the SILC community."
+    );
 
-function toStringi()
-{
-   return s1.toString() + s2.toString() + s3.toString();
-}
- 
-toStringi();
+    function toStringi() {
+        return s1.toString() + s2.toString() + s3.toString();
+    }
+
+    toStringi();
 </script>
-
-
-<!--document.write("<table class = 'table_2'><tr><td><a href =" + this.href + "title =" + this.title + "><image class = 'image' src =" + this.src + "></image></a></td><table class = 'table_3'><tr class = 'name'>" + this.title + "</tr><tr class = 'description'>" + this.description +"</tr></table></tr></table>")
-document.write("<table class = 'table_2'>");
-document.write("<tr><td><a href =" + this.href + " title = " + this.title + "><image class = 'image' src = "+ this.src +"></image></a></td><td class = 'description'>" + this.description + "</td></tr></table>")-->
