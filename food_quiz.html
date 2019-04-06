@@ -150,12 +150,32 @@
 
     var q10 = new Question("Foods of India", "Which of these foods is not made from wheat?", "Chapati", "Roti", "Naan", "Dosa", "D", "samosaa.jpg", "X");
 
+    var q11 = new Question("Foods of India", "In which city did Indo-Chinese cuisine originate?", "Mumbai", "Chennai", "Bengaluru", "Kolkatta", "D", "indo.jpeg", "X");
+
+    var q12 = new Question("Foods of India", "What is a famous snack from Gujurat?", "Aloo Paratha", "Dosa", "Dhokla", "Dumplings", "C", "gujurat.jpg", "X");
+
+    var q13 = new Question("Foods of India", "Which of these dishes is not from Mumbai", "Vada Pav", "Pav Bhaji", "Bhel Puri", "Kachori", "D", "mumbai.jpg", "X");
+
+    var q14 = new Question("Foods of India", "Which of these is not a South Indian dish?", "Sambar", "Paratha", "Idli", "Avial", "B", "south_india.jpg", "X");
+
+    var q15 = new Question("Foods of India", "Which is not a bean/lentil dish?", "Chole", "Rajma", "Aloo Matar", "Tadka Daal", "C", "bean.jpg", "X");
+
+    var q16 = new Question("Foods of India", "What is the Hindi word for Spinach?", "Palak", "Matar", "Aloo", "Tamatar", "A", "spinach.jpg", "X");
+
+    var q17 = new Question("Foods of India", "What is not an authentic Indian dessert?", "Carrot Halwa", "Gulab Jamun", "Baklava", "Ras Malai", "C", "sweets.jpeg", "X");
+
+    var q18 = new Question("Foods of India", "What spice is commonly used in Indian desserts?", "Clove", "Cinnamon", "Mustard", "Cardamom", "D", "spice.jpeg", "X");
+
+    var q19 = new Question("Foods of India", "What type of food is this?", "Chai", "Dosa", "Alu Gobi", "Chapati and Curry", "B", "dosa.jpeg", "X");
+
+    var q20 = new Question("Foods of India", "What type of food is this?", "Pani Puri", "Pav Bhaji", "Dhokla", "Aloo Matar", "A", "panipuri.jpg", "X");
+
 
     //**********************************************
     // STEP 4:  Create an array to hold all the above questions
     //**********************************************
 
-    var question_bank = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10];
+    var question_bank = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14, q15, q16, q17, q18, q19, q20];
 
     //**********************************************
     // STEP 5:  set HOW_MANY=5 questions
@@ -325,12 +345,9 @@
         for (var i = 0; i < mini_question_bank.length; i = i + 1) {
             if (mini_question_bank[i].given_answer == "X") {
                 are_all_questions_answered = false;
-
                 break;
             }
         }
-
-
         if (are_all_questions_answered) {
             submit_btn.disabled = false;
         }
