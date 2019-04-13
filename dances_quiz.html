@@ -242,19 +242,109 @@
       "B",
       "kathak.jpeg",
       "X");
-
+   var q11 = new Question("Dances of India",
+      "What dance is represented by the picture above?",
+      "Sattriya",
+      "Manipuri",
+      "Bihu",
+      "Bhangra",
+      "A",
+      "sattriya.jpeg",
+      "X");
+   var q12 = new Question("Dances of India",
+      "What dance is represented by the picture above?",
+      "Sattriya",
+      "Manipuri",
+      "Bihu",
+      "Bhangra",
+      "B",
+      "manipuri.jpeg",
+      "X");
+   var q13 = new Question("Dances of India",
+      "What dance is represented by the picture above?",
+      "Sattriya",
+      "Manipuri",
+      "Bihu",
+      "Bhangra",
+      "C",
+      "bihu.jpeg",
+      "X");
+   var q14 = new Question("Dances of India",
+      "What dance is represented by the picture above?",
+      "Bharatanatyam",
+      "Mohiniyattam",
+      "Kathak",
+      "Bhangra",
+      "A",
+      "bharatanatyam.jpeg",
+      "X");
+   var q15 = new Question("Dances of India",
+      "What dance is represented by the picture above?",
+      "Bharatanatyam",
+      "Mohiniyattam",
+      "Kathak",
+      "Bhangra",
+      "B",
+      "mohiniyattam.jpeg",
+      "X");
+   var q16 = new Question("Dances of India",
+      "What dance is represented by the picture above?",
+      "Bharatanatyam",
+      "Mohiniyattam",
+      "Kathak",
+      "Bhangra",
+      "C",
+      "kathak.jpeg",
+      "X");
+   var q17 = new Question("Dances of India",
+      "What dance is represented by the picture above?",
+      "Bharatanatyam",
+      "Mohiniyattam",
+      "Kathak",
+      "Bhangra",
+      "D",
+      "bhangra.jpeg",
+      "X");
+   var q18 = new Question("Dances of India",
+      "What dance is represented by the picture above?",
+      "Kuchipudi",
+      "Odissi",
+      "Bhangra",
+      "Dandiya",
+      "A",
+      "kuchipudi.jpeg",
+      "X");
+   var q19 = new Question("Dances of India",
+      "What dance is represented by the picture above?",
+      "Kuchipudi",
+      "Odissi",
+      "Bhangra",
+      "Dandiya",
+      "B",
+      "odissi.jpeg",
+      "X");
+   var q20 = new Question("Dances of India",
+      "What dance is represented by the picture above?",
+      "Kuchipudi",
+      "Odissi",
+      "Bhangra",
+      "Dandiya",
+      "D",
+      "dandiya.jpeg",
+      "X");
+   
 
    //**********************************************
    // STEP 4:  Create an array to hold all the above questions
    //**********************************************
 
-   var question_bank = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10];
+   var question_bank = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14, q15, q16, q17, q18, q19, q20];
 
    //**********************************************
    // STEP 5:  set HOW_MANY=5 questions
    // This constant will be used to select that many questions from the question bank 
    //**********************************************
-   var HOW_MANY = 5;
+   var HOW_MANY = 10;
 
    //**********************************************
    // STEP 6:  Shuffle/Randomize the Array
@@ -267,7 +357,7 @@
       }
    }
    // for debugging purposes, disable shuffle for the timebeing
-   // shuffle(question_bank);
+    shuffle(question_bank);
 
    //**********************************************
    // STEP 7:  Select HOW_MANY questions 
