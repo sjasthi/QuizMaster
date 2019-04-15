@@ -152,7 +152,7 @@
 
     var q11 = new Question("Foods of India", "In which city did Indo-Chinese cuisine originate?", "Mumbai", "Chennai", "Bengaluru", "Kolkatta", "D", "indo.jpeg", "X");
 
-    var q12 = new Question("Foods of India", "What is a famous snack from Gujurat?", "Aloo Paratha", "Dosa", "Dhokla", "Dumplings", "C", "gujurat.jpg", "X");
+    var q12 = new Question("Foods of India", "What is a famous snack from Gujarat?", "Aloo Paratha", "Dosa", "Dhokla", "Dumplings", "C", "gujurat.jpg", "X");
 
     var q13 = new Question("Foods of India", "Which of these dishes is not from Mumbai", "Vada Pav", "Pav Bhaji", "Bhel Puri", "Kachori", "D", "mumbai.jpg", "X");
 
@@ -341,6 +341,7 @@
         }
 
         // if all questions are answered, then enable the submit button
+        submit_btn.disabled = true;
         var are_all_questions_answered = true;
         for (var i = 0; i < mini_question_bank.length; i = i + 1) {
             if (mini_question_bank[i].given_answer == "X") {
