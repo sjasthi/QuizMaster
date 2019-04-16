@@ -8,34 +8,35 @@
 
 <script>
    //****************************************************
-//  This block helps to catch the syntax errors.
-//  These errors are reported back to the web page
-//****************************************************
-      window.onerror = function(e) {
-        document.write('There\'s an error: ', e, '</br>')
-     };
-   </script>
+   //  This block helps to catch the syntax errors.
+   //  These errors are reported back to the web page
+   //****************************************************
+   window.onerror = function (e) {
+      document.write('There\'s an error: ', e, '</br>')
+   };
+</script>
 
-   <!--**************************************************** -->
-   <!--This is the tool bar--> 
-   <!--**************************************************** -->
+<!--**************************************************** -->
+<!--This is the tool bar-->
+<!--**************************************************** -->
 <style>
    #table_1 {
-      border-spacing: 100px 0px;
+      border-spacing: 200px 0px;
          }
 
 </style>
-   <table id = "table_1">
-      <tr>
-          <td><image id = "silc" src="Images/index_images/silc_home.jpg"></image></td>
-          <!--Link To Preferences-->
-          <td id = "text"><a href = "">Preferences</a></td>
-          <!--Link To About-->
-          <td id = "text"><a href = "">About</a></td>
-          <!--Link To Help-->
-          <td id = "text"><a href = "">Help</a></td>
-      </tr>
-   </table>
+<table id="table_1">
+   <tr>
+      <td>
+         <image id="silc" src="Images/index_images/silc_home.jpg"></image>
+      </td>
+      <!--Link To About-->
+      <td id="text"><a href="about.html">About</a></td>
+      <!--Link To Help-->
+      <td id="text"><a href="help.html">Help</a></td>
+   </tr>
+</table>
+
 <body>
 
    <!--**************************************************** -->
@@ -141,7 +142,7 @@
          document.write("<br>" + this.image);
          document.write("<br>" + this.given_answer + "<br>");
       }
-      
+
    }
 
    //**********************************************
@@ -150,224 +151,224 @@
    //**********************************************
 
    var q1 = new Question(
-    "Sports",
-    "What is the most popular sport in India?",
-    "Cricket",
-    "Badminton",
-    "Chess",
-    "Football (Soccer)",
-    "A",
-    "Question1_sports.gif",
-    "X");
+      "Sports",
+      "What is the most popular sport in India?",
+      "Cricket",
+      "Badminton",
+      "Chess",
+      "Football (Soccer)",
+      "A",
+      "Question1_sports.gif",
+      "X");
 
-  var q2 = new Question(
-    "Sports",
-    "What is India’s national sport?",
-    "Field Hockey",
-    "Cricket",
-    "Football (soccer)",
-    "Badminton",
-    "A",
-    "Question2_sports.jpg",
-    "X");
+   var q2 = new Question(
+      "Sports",
+      "What is India’s national sport?",
+      "Field Hockey",
+      "Cricket",
+      "Football (soccer)",
+      "Badminton",
+      "A",
+      "Question2_sports.jpg",
+      "X");
 
-  var q3 = new Question(
-    "Sports",
-    "How many medals did India win in the 2016 Summer Olympics?",
-    "0 medals",
-    "1 silver medal",
-    "1 silver and 1 bronze medal",
-    "2 gold medals",
-    "C",
-    "Question3_sports.jpg",
-    "X");
+   var q3 = new Question(
+      "Sports",
+      "How many medals did India win in the 2016 Summer Olympics?",
+      "0 medals",
+      "1 silver medal",
+      "1 silver and 1 bronze medal",
+      "2 gold medals",
+      "C",
+      "Question3_sports.jpg",
+      "X");
 
-  var q4 = new Question(
-    "Sports",
-    "Do Indians play ice hockey?",
-    "No, India is a hot place!",
-    "No, Field Hockey is more popular.",
-    "Yes, but only in some cities.",
-    "Yes, everywhere.",
-    "C",
-    "Question4_sports.jpg",
-    "X");
+   var q4 = new Question(
+      "Sports",
+      "Do Indians play ice hockey?",
+      "No, India is a hot place!",
+      "No, Field Hockey is more popular.",
+      "Yes, but only in some cities.",
+      "Yes, everywhere.",
+      "C",
+      "Question4_sports.jpg",
+      "X");
 
-  var q5 = new Question(
-    "Sports",
-    "Who is the most famous cricket player in India?",
-    "Virat Kohli",
-    "Sachin Tendulkar",
-    "MS Dhoni",
-    "Rahul Dravid",
-    "B",
-    "Question5_sports.jpg",
-    "X");
+   var q5 = new Question(
+      "Sports",
+      "Who is the most famous cricket player in India?",
+      "Virat Kohli",
+      "Sachin Tendulkar",
+      "MS Dhoni",
+      "Rahul Dravid",
+      "B",
+      "Question5_sports.jpg",
+      "X");
 
-  var q6 = new Question(
-    "Sports",
-    "How many times has India won Gold in Olympics Field Hockey?",
-    "3",
-    "4",
-    "9",
-    "8",
-    "D",
-    "Question6_sports.jpg",
-    "X");
+   var q6 = new Question(
+      "Sports",
+      "How many times has India won Gold in Olympics Field Hockey?",
+      "3",
+      "4",
+      "9",
+      "8",
+      "D",
+      "Question6_sports.jpg",
+      "X");
 
-  var q7 = new Question(
-    "Sports",
-    "When was the last time India hosted the Cricket World Cup?",
-    "2012",
-    "2011",
-    "2015",
-    "2004",
-    "B",
-    "Question7_sports.jpg",
-    "X");
+   var q7 = new Question(
+      "Sports",
+      "When was the last time India hosted the Cricket World Cup?",
+      "2012",
+      "2011",
+      "2015",
+      "2004",
+      "B",
+      "Question7_sports.jpg",
+      "X");
 
-  var q8 = new Question(
-    "Sports",
-    "What is Cricket most similar to?",
-    "Football (Soccer)",
-    "Baseball",
-    "Gilli-Danda",
-    "Kabaddi",
-    "B",
-    "Question8_sports.jpg",
-    "X");
+   var q8 = new Question(
+      "Sports",
+      "What is Cricket most similar to?",
+      "Football (Soccer)",
+      "Baseball",
+      "Gilli-Danda",
+      "Kabaddi",
+      "B",
+      "Question8_sports.jpg",
+      "X");
 
-  var q9 = new Question(
-    "Sports",
-    "Where was Chess invented?",
-    "India",
-    "Persia",
-    "UK",
-    "Pakistan",
-    "A",
-    "Question9_sports.jpeg",
-    "X");
+   var q9 = new Question(
+      "Sports",
+      "Where was Chess invented?",
+      "India",
+      "Persia",
+      "UK",
+      "Pakistan",
+      "A",
+      "Question9_sports.jpeg",
+      "X");
 
-  var q10 = new Question(
-    "Sports",
-    "Who was one of the four people to break the 2800 mark in Chess?",
-    "Pentala Harikrishna",
-    "Humpy Koneru",
-    "Viswanathan Anand",
-    "Harika Dronavalli",
-    "C",
-    "Question10_sports.webp",
-    "X");
+   var q10 = new Question(
+      "Sports",
+      "Who was one of the four people to break the 2800 mark in Chess?",
+      "Pentala Harikrishna",
+      "Humpy Koneru",
+      "Viswanathan Anand",
+      "Harika Dronavalli",
+      "C",
+      "Question10_sports.webp",
+      "X");
 
-  var q11 = new Question(
-    "Sports",
-    "How old was Sachin Tendulkar when he played his first international game?",
-    "16",
-    "13",
-    "19",
-    "29",
-    "B",
-    "Question11_sports.jpg",
-    "X")
+   var q11 = new Question(
+      "Sports",
+      "How old was Sachin Tendulkar when he played his first international game?",
+      "16",
+      "13",
+      "19",
+      "29",
+      "B",
+      "Question11_sports.jpg",
+      "X")
 
-  var q12 = new Question(
-    "Sports",
-    "What does BAOI stand for?",
-    "Baseball Association of India",
-    "Boys Activity of India",
-    "Badminton Association of India",
-    "Basketball Association of India",
-    "C",
-    "Question12_sports.jpg",
-    "X")
+   var q12 = new Question(
+      "Sports",
+      "What does BAOI stand for?",
+      "Baseball Association of India",
+      "Boys Activity of India",
+      "Badminton Association of India",
+      "Basketball Association of India",
+      "C",
+      "Question12_sports.jpg",
+      "X")
 
-  var q13 = new Question(
-    "Sports",
-    "When was the first ever National Sports Policy in India announced?",
-    "1984",
-    "1880",
-    "2013",
-    "1967",
-    "A",
-    "Question13_sports.jpg",
-    "X")
+   var q13 = new Question(
+      "Sports",
+      "When was the first ever National Sports Policy in India announced?",
+      "1984",
+      "1880",
+      "2013",
+      "1967",
+      "A",
+      "Question13_sports.jpg",
+      "X")
 
-  var q14 = new Question(
-    "Sports",
-    "Which of the following is not commonly played in India?",
-    "Cricket",
-    "Nordic Skiing",
-    "Field Hockey",
-    "Football (Soccer)",
-    "B",
-    "Question14_sports.jpg",
-    "X")
+   var q14 = new Question(
+      "Sports",
+      "Which of the following is not commonly played in India?",
+      "Cricket",
+      "Nordic Skiing",
+      "Field Hockey",
+      "Football (Soccer)",
+      "B",
+      "Question14_sports.jpg",
+      "X")
 
-  var q15 = new Question(
-    "Sports",
-    "When was the first time India participated in the Olympic games?",
-    "2004",
-    "1990",
-    "1976",
-    "1892",
-    "B",
-    "Question15_sports.jpg",
-    "X")
+   var q15 = new Question(
+      "Sports",
+      "When was the first time India participated in the Olympic games?",
+      "2004",
+      "1990",
+      "1976",
+      "1892",
+      "B",
+      "Question15_sports.jpg",
+      "X")
 
-  var q16 = new Question(
-    "Sports",
-    "Which of these leagues is the second richest sports league in the world? Second only to National Basketball Association of the US.",
-    "PKL - Pro Kabaddi League",
-    "IPL - Indian Premier League",
-    "HIL - Hockey Indian League",
-    "IBL - Indian Badminton League",
-    "B",
-    "Question16_sports.jpeg",
-    "X")
+   var q16 = new Question(
+      "Sports",
+      "Which of these leagues is the second richest sports league in the world? Second only to National Basketball Association of the US.",
+      "PKL - Pro Kabaddi League",
+      "IPL - Indian Premier League",
+      "HIL - Hockey Indian League",
+      "IBL - Indian Badminton League",
+      "B",
+      "Question16_sports.jpeg",
+      "X")
 
-  var q17 = new Question(
-    "Sports",
-    "Who was the first woman to win gold in wrestling in the commonwealth games?",
-    "Vinesh Phogat",
-    "Saina Nehwal",
-    "Geeta Phogat",
-    "Heena Sidhu",
-    "C",
-    "Question17_sports.jpg",
-    "X")
+   var q17 = new Question(
+      "Sports",
+      "Who was the first woman to win gold in wrestling in the commonwealth games?",
+      "Vinesh Phogat",
+      "Saina Nehwal",
+      "Geeta Phogat",
+      "Heena Sidhu",
+      "C",
+      "Question17_sports.jpg",
+      "X")
 
-  var q18 = new Question(
-    "Sports",
-    "How many gold medals did India win at the 2010 commonwealth games?",
-    "23",
-    "45",
-    "24",
-    "38",
-    "D",
-    "Question18_sports.png",
-    "X")
+   var q18 = new Question(
+      "Sports",
+      "How many gold medals did India win at the 2010 commonwealth games?",
+      "23",
+      "45",
+      "24",
+      "38",
+      "D",
+      "Question18_sports.png",
+      "X")
 
-  var q19 = new Question(
-    "Sports",
-    "When was the first time India competed in the commonwealth games?",
-    "1934",
-    "1946",
-    "1988",
-    "1892",
-    "A",
-    "Question19_sports.jpg",
-    "X")
+   var q19 = new Question(
+      "Sports",
+      "When was the first time India competed in the commonwealth games?",
+      "1934",
+      "1946",
+      "1988",
+      "1892",
+      "A",
+      "Question19_sports.jpg",
+      "X")
 
-  var q20 = new Question(
-    "Sports",
-    "What is Kho Kho?",
-    "It is a type of ice cream that includes chocolate chips.",
-    "It is a game similar to tag and a traditional game from ancient India.",
-    "It is a version of laser tag but better.",
-    "It is twister with an Indian twist involving 12 players to play at the same time.",
-    "B",
-    "Question20_sports.jpg",
-    "X")
+   var q20 = new Question(
+      "Sports",
+      "What is Kho Kho?",
+      "It is a type of ice cream that includes chocolate chips.",
+      "It is a game similar to tag and a traditional game from ancient India.",
+      "It is a version of laser tag but better.",
+      "It is twister with an Indian twist involving 12 players to play at the same time.",
+      "B",
+      "Question20_sports.jpg",
+      "X")
 
    //**********************************************
    // STEP 4:  Create an array to hold all the above questions
@@ -382,7 +383,7 @@
    var HOW_MANY = 20;
 
    //**********************************************
-   // STEP 6:  Shuffle/Randomize the Array
+   // STEP 6:  Shuffle/Randomize the Array 
    // Reference: https://javascript.info/task/shuffle 
    //**********************************************
    function shuffle(array) {
@@ -391,8 +392,8 @@
          [array[i], array[j]] = [array[j], array[i]];
       }
    }
-  // for debugging purposes, disable shuffle for the timebeing
-      shuffle(question_bank);
+   // for debugging purposes, disable shuffle for the timebeing
+   shuffle(question_bank);
 
    //**********************************************
    // STEP 7:  Select HOW_MANY questions 
@@ -401,7 +402,7 @@
 
 
 
-  //**********************************************
+   //**********************************************
    // STEP 8:  Display the first question 
    //          from the mini_question_bank 
    // A random question will then show up when the page first loads up.
@@ -439,21 +440,20 @@
    // compare the given_answers with the correct answer
    // keep counting the correct answers
    // publish the score to the user
+
    function showResults() {
-           
+
       var count = 0;
-      for (var i = 0; i < mini_question_bank.length; i++)
-      {
-         if (mini_question_bank[i].answer == mini_question_bank[i].given_answer)
-         {
-            count = count+ 1;
+      for (var i = 0; i < mini_question_bank.length; i++) {
+         if (mini_question_bank[i].answer == mini_question_bank[i].given_answer) {
+            count = count + 1;
          }
       }
-
-      document.write("<br>Congratulations");
-      document.write("<br>Your final score: ", count, " out of ", HOW_MANY);
-      document.write("<br><br><br>");
-      document.write(mini_question_bank);
+      document.write("<style> #table_1 {border-spacing: 200px 0px;} .congrats { text-align: center; } #congratsi {height: 200px; width: 200px; display: block; margin-left: auto; margin-right: auto;}</style>");
+      document.write("<table id = 'table_1'><tr><td><image id = 'silc' src='Images/index_images/silc_home.jpg'></image></td><td id = 'text'><a href = 'about.html'>About</a></td><td id = 'text'><a href = 'help.html'>Help</a></td></tr></table>");
+      document.write("<br> <p class = 'congrats' >Congratulations</p>");
+      document.write("<image id = 'congratsi' src='Images/about_images/thumbsup.jpg'></image>")
+      document.write("<p class = 'congrats'>Your final score: ", count, " out of ", HOW_MANY, "</p>");
    }
 
    //**********************************************
@@ -483,27 +483,27 @@
          document.getElementById("choice_2").checked = false;
          document.getElementById("choice_3").checked = false;
          document.getElementById("choice_4").checked = false;
-      } 
+      }
 
       // If the question already has an answer, then show that answer
       if (selected_question.given_answer == "A") {
          document.getElementById("choice_1").checked = true;
       } else
-      if (selected_question.given_answer == "B") {
-         document.getElementById("choice_2").checked = true;
-      } else
-      if (selected_question.given_answer == "C") {
-         document.getElementById("choice_3").checked = true;
-      } else
-      if (selected_question.given_answer == "D") {
-         document.getElementById("choice_4").checked = true;
-      }
+         if (selected_question.given_answer == "B") {
+            document.getElementById("choice_2").checked = true;
+         } else
+            if (selected_question.given_answer == "C") {
+               document.getElementById("choice_3").checked = true;
+            } else
+               if (selected_question.given_answer == "D") {
+                  document.getElementById("choice_4").checked = true;
+               }
       // once the question is updated, validate all the three buttons
       validateButtons();
    }
 
 
-   
+
    //**********************************************
    // LAST STEP:  All the supporting functions are here
    //********************************************** 
@@ -529,7 +529,7 @@
       }
 
       // if index == HOW_MANY, disable the next button
-      if (index == HOW_MANY-1) {
+      if (index == HOW_MANY - 1) {
          next_btn.disabled = true;
       } else {
          next_btn.disabled = false;
@@ -537,17 +537,14 @@
 
       // if all questions are answered, then enable the submit button
       var are_all_questions_answered = true;
-      for (var i=0; i < mini_question_bank.length; i=i+1)
-      {
-         if (mini_question_bank[i].given_answer == "X")
-         {
+      for (var i = 0; i < mini_question_bank.length; i = i + 1) {
+         if (mini_question_bank[i].given_answer == "X") {
             are_all_questions_answered = false;
             break;
          }
       }
 
-      if (are_all_questions_answered)
-      {
+      if (are_all_questions_answered) {
          submit_btn.disabled = false;
       }
    }
