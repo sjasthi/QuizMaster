@@ -44,7 +44,7 @@
    <!-- when the page first loads up.  -->
    <!-- **************************************************** -->
 
-   <p><img id="q_image" src="images\dances\kathakali.jpeg" style="max-height:250px;width:auto;" alt="img not found" /></p>
+   <p><img id="q_image" src="Images\dances\kathakali.jpeg" style="max-height:250px;width:auto;" alt="img not found" /></p>
    <p id="question"> Dummy question </p>
    <form>
       <input type="radio" name="choices" id="choice_1" value="A" onclick="updateGivenAnswer(this.value)" />
@@ -315,20 +315,18 @@
    // keep counting the correct answers
    // publish the score to the user
    function showResults() {
-           
+
       var count = 0;
-      for (var i = 0; i < mini_question_bank.length; i++)
-      {
-         if (mini_question_bank[i].answer == mini_question_bank[i].given_answer)
-         {
-            count = count+ 1;
+      for (var i = 0; i < mini_question_bank.length; i++) {
+         if (mini_question_bank[i].answer == mini_question_bank[i].given_answer) {
+            count = count + 1;
          }
       }
-
-      document.write("<br>Congratulations");
-      document.write("<br>Your final score: ", count, " out of ", HOW_MANY);
-      document.write("<br><br><br>");
-      document.write(mini_question_bank);
+      document.write("<style> #table_1 {border-spacing: 200px 0px;} .congrats { text-align: center; } #congratsi {height: 200px; width: 200px; display: block; margin-left: auto; margin-right: auto;}</style>");
+      document.write("<table id = 'table_1'><tr><td><image id = 'silc' src='Images/index_images/silc_home.jpg'></image></td><td id = 'text'><a href = 'about.html'>About</a></td><td id = 'text'><a href = 'help.html'>Help</a></td></tr></table>");
+      document.write("<br> <p class = 'congrats' >Congratulations</p>");
+      document.write("<image id = 'congratsi' src='Images/about_images/thumbsup.jpg'></image>")
+      document.write("<p class = 'congrats'>Your final score: ", count, " out of ", HOW_MANY, "</p>");
    }
 
    //**********************************************
